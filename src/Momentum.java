@@ -6,9 +6,9 @@ public class Momentum {
         int velocity;
         int momentumE;
         c.print("Enter object's mass: ");
-        mass = c.readDouble();
+        mass = c.readInt();
         c.print("Enter the object's velocity: ");
-        velocity=c.readDouble();
+        velocity=c.readInt();
         momentumE = mass * velocity;
          c.print("The momentum is " + momentumE);
     }
