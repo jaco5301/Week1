@@ -8,17 +8,17 @@ public class Makeline {
         int x1, x2, y1, y2;
         c.print("Enter X1: ");
         x1 = c.readInt();
-        c.print("Enter Y1: ");
+        c.print("\nEnter Y1: ");
         y1 = c.readInt();
-        c.print("Enter X2: ");
+        c.print("\nEnter X2: ");
         x2 = c.readInt();
-        c.print("Enter Y2: ");
+        c.print("\nEnter Y2: ");
         y2 = c.readInt();
         p.up();
         p.move(x1-200,y1-200);
         p.down();
         p.drawString("(" + y1 + ", " + x1 + ")");
-        p.move(y1-200,y2-200);
+        p.move(x2-200,y2-200);
         p.drawString("(" + y2 + ", " + x1 + ")");
         
     }
