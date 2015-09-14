@@ -1,20 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author Jaco5301
- */
+import TurtleGraphics.*;
 public class Makeline {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        SketchPadWindow s = new SketchPadWindow(400, 400);
+        StandardPen p =new StandardPen(s);
+        p.up();
+        p.move(100-200,50-200);
+        p.down();
+        p.drawString("(" + 100 + ". " + 50 + ")");
+        p.move(300-200,300-200);
+        p.drawString("(" + 300 + ", " + 300 + ")");
+        
     }
     
 }
